@@ -3,8 +3,10 @@ git:
   depth: false
   submodules: false
 sudo: false
-dist: trusty
+dist: focal
 language: java
+jdk:
+  - openjdk11
 before_install:
   - echo "MAVEN_OPTS='-Xmx2g'" > ~/.mavenrc
 # addons:
